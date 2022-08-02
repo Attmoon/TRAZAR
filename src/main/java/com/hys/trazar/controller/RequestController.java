@@ -89,7 +89,6 @@ public class RequestController {
 	@RequestMapping("list")
 	public void list(Model model, String categoryName, @RequestParam(name = "keyword", defaultValue = "") String keyword, 
 			@RequestParam(name = "type", defaultValue = "") String type) {
-//		List<RequestDto> list = service.listRequest();
 		
 		List<RequestDto> list = null;
 		if(categoryName == null) {
@@ -123,7 +122,6 @@ public class RequestController {
 	@GetMapping("get")
 	public void get(int id, Model model) {
 		RequestDto dto = service.getRequestById(id);
-//		processThumbNailImage2(dto);
 		model.addAttribute("request", dto);
 	}
 	
@@ -135,7 +133,7 @@ public class RequestController {
 		return "redirect:/request/list";
 	}
 	
-//	// 썸머노트 에디터에서 받는 이미지 업로드 처리
+	// 썸머노트 에디터에서 받는 이미지 업로드 처리
 	@RequestMapping(value = "/Imageupload", method = RequestMethod.POST, produces="text/plain;charset=UTF-8")
 	@ResponseBody
 	public String imageUpload(MultipartHttpServletRequest request) throws IOException {
