@@ -55,19 +55,14 @@ table.type09 td {
 <body>
 	<my:navBar />
 
-
-
 	<div class="container mt-5" style="margin-bottom: 20%;">
 		<div class="row">
 			<div class="col-8">
 				<h1>내 의뢰 목록</h1>
 				<table class="type09 text-center mt-5"">
-
 					<c:if test="${not empty message }">
 						<div class="alert alert-primary">${message }</div>
 					</c:if>
-
-
 					<thead>
 						<tr>
 							<th scope="cols">번호</th>
@@ -113,12 +108,11 @@ table.type09 td {
 					<img src="../resources/picture/ad/아이패드.PNG" class="card-img-top">
 				</div>
 			</div>
-
 		</div>
 	</div>
 	<section class="mt-5">
 			<my:footer2/>
-        </section>
+    </section>
 </body>
 
 </html>

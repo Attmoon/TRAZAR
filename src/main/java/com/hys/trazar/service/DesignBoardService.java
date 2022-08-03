@@ -107,9 +107,9 @@ public class DesignBoardService {
 		}*/
 
 
-		public int likeSelectById(LikeDto likeDto) {
-			return mapper.likeSelectById(likeDto);
-		}
+	public int likeSelectById(LikeDto likeDto) {
+		return mapper.likeSelectById(likeDto);
+	}
 	
 
 	public void likeInsert(LikeDto likeDto) {

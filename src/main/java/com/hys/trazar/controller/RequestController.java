@@ -52,7 +52,7 @@ public class RequestController {
 	}
 	
 	@PostMapping("insert")
-	public String insertRequest(RequestDto dto, Principal principal,DesignBoardDto designBoard, RedirectAttributes rttr) {
+	public String insertRequest(RequestDto dto, Principal principal, RedirectAttributes rttr) {
 		
 		if(dto.getPrice() == "") {
 			dto.setPrice("문의주세요");

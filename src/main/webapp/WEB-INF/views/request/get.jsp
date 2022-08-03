@@ -98,7 +98,6 @@
 				<!-- Post content-->
 				<article>
 					<!-- Post header-->
-
 					<div class="card shadow mb-4">
 						<div class="card-body">
 							<div class="form-group row" style="text-align: center;">
@@ -137,11 +136,6 @@
 									<div class="text-muted fst-italic mb-2">${request.memberId }
 										| ${request.inserted }</div>
 									<!-- Post categories-->
-
-
-
-
-
 
 								</header>
 								<!-- Preview image figure-->
